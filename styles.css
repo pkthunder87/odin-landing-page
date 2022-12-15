@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
 }
 ul {
     list-style: none;
@@ -9,20 +10,63 @@ ul {
     font-size: 18px;
   }
 
-  a:link {
-    text-decoration: none;
-    color: #E5E7EB;
-  }
+a:link {
+text-decoration: none;
+color: #E5E7EB;
+}
+
+a:visited {
+color: #E5E7EB;
+}
+
+h1 {
+font-size: 48px;
+color: #f9faf8;
+margin: 0;
+}
+
+p {
+color: #E5E7EB
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border-style: none;
+}
+.hero-right > img {
+    width: 500px;
+    height: 250px;
+}
   
 .header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     font-size: 24px;
     color: #f9faf8;
+    justify-content: space-between;
+    margin: 0 6.8em 4em;
+
 }
 .hero {
     background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5em;
+}
+
+.box-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10em;
+}
+
+.hero-left{
+    width: 400px;
 }
 .links {
     display: flex;
