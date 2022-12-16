@@ -1,7 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 
@@ -24,7 +22,8 @@ h1 {
 }
 
 p {
-    color: #E5E7EB
+    color: #E5E7EB;
+    margin-top: 1em;
 }
 
 button {
@@ -34,11 +33,13 @@ button {
     padding: 8px 32px;
     border-radius: 10px;
     border-style: none;
+    max-width: fit-content;
 }
 
 .hero-right>img {
     width: 500px;
     height: 250px;
+    padding-top: 5em;
 }
 
 .header {
@@ -47,26 +48,29 @@ button {
     font-size: 24px;
     color: #f9faf8;
     justify-content: space-between;
-    margin: 0 6.8em 4em;
-
+    flex-wrap: wrap;
 }
 
 .hero {
-    background-color: #1f2937;
+    background: #1f2937;
+    padding: 0 8em 9em 13em;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 8em;
 }
 
 .box-hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 10em;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .hero-left {
     width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .links {
@@ -78,19 +82,20 @@ button {
     background-color: white;
     justify-content: center;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
-.small-blocks>img,
 .text {
     text-align: center;
     color: grey;
     width: 200px;
-    height: 200px;
 }
 
 .small-blocks>img {
     border: 5px solid dodgerblue;
     border-radius: 10px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .title {
@@ -98,4 +103,22 @@ button {
     font-weight: 800;
     text-align: center;
     margin: 1.2em 0;
+    background-color: white;
 }
+
+@media(max-width: 700px) {
+    .hero-right>img {
+        width: 300px;
+        height: 200px;
+        padding-top: 0;
+    }
+    .hero {
+        padding: 0;
+        align-items: center;
+    }
+    .box-hero, .header, .hero-left {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1em;
+    }
