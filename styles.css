@@ -10,26 +10,37 @@ ul {
 }
 
 a:link,
-a:visited {
+a:visited,
+.sub-text,
+.action-text-smaller {
     text-decoration: none;
     color: #E5E7EB;
+}
+
+h1,
+button,
+.header,
+.action-text-bigger {
+    color: #f9faf8;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 800;
-    color: #f9faf8;
     margin: 0;
 }
 
 button {
     background-color: #3882f6;
-    color: #f9faf8;
     font-size: 18px;
     padding: 8px 32px;
     border-radius: 10px;
     border-style: none;
     max-width: fit-content;
+}
+
+button.border {
+    border: 2px solid #f9faf8;
 }
 
 .hero-right>img {
@@ -42,7 +53,6 @@ button {
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: #f9faf8;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -89,7 +99,6 @@ button {
 }
 
 .sub-text {
-    color: #E5E7EB;
     margin-top: 1em;
 }
 
@@ -118,6 +127,7 @@ button {
 
 .author {
     text-align: right;
+    font-size: 22px;
 }
 
 .quote-block {
@@ -125,9 +135,41 @@ button {
     padding: 4em 16em;
 }
 
+.blue-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6em 10em;
+    padding: 2em 6em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.action-text-bigger {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.action-text-smaller {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1000px) {
     .quote-block {
         padding: 2em 0;
+    }
+
+    .blue-block {
+        margin: 1em 2em;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .action-text-bigger {
+        margin: 0;
     }
 }
 
