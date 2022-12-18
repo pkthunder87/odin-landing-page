@@ -20,7 +20,7 @@ a:visited,
 }
 
 h1,
-button,
+span,
 .header,
 .action-text-bigger {
     color: #f9faf8;
@@ -32,7 +32,7 @@ h1 {
     margin: 0;
 }
 
-button {
+span {
     background-color: #3882f6;
     font-size: 18px;
     padding: 8px 32px;
@@ -41,12 +41,12 @@ button {
     max-width: fit-content;
 }
 
-button.border,
-button.top {
+span.border,
+span.top {
     border: 2px solid #f9faf8;
 }
 
-button.top {
+span.top {
     position: fixed;
     bottom: 5px;
     right: 5px;
@@ -70,7 +70,7 @@ button.top {
 }
 
 .hero {
-    background: #1f2937;
+    background-color: #1f2937;
     padding: 0 8em 9em 13em;
     min-height: 400px;
     display: flex;
@@ -131,9 +131,12 @@ button.top {
 
 .quote {
     font-size: 30px;
-    color: #1f2937;
     font-weight: 300;
     flex: 0 1 auto;
+}
+
+.info, .quote {
+    color: #1f2937;
 }
 
 .author {
@@ -143,7 +146,7 @@ button.top {
 
 .quote-block {
     background-color: #E5E7EB;
-    padding: 4em 16em;
+    padding: 5em 16em;
 }
 
 .action-block {
@@ -165,6 +168,14 @@ button.top {
 
 .action-text-smaller {
     margin-top: 4px;
+    font-size: 18px;
+}
+
+.footer {
+    padding: 2.1em 4em;
+    background-color: #1f2937;
+    color: #E5E7EB;
+    text-align: center;
     font-size: 18px;
 }
 
