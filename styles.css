@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -26,7 +28,7 @@ button,
 
 h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -39,9 +41,19 @@ button {
     max-width: fit-content;
 }
 
-button.border {
+button.border,
+button.top {
     border: 2px solid #f9faf8;
 }
+
+button.top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 0 4px;
+    margin-bottom: calc(env(safe-area-inset-bottom) + 2px);
+}
+
 
 .hero-right>img {
     width: 500px;
@@ -109,7 +121,7 @@ button.border {
     max-height: 200px;
 }
 
-.title {
+.info {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
@@ -120,8 +132,7 @@ button.border {
 .quote {
     font-size: 30px;
     color: #1f2937;
-    font-weight: 200;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 300;
     flex: 0 1 auto;
 }
 
@@ -135,7 +146,7 @@ button.border {
     padding: 4em 16em;
 }
 
-.blue-block {
+.action-block {
     display: flex;
     flex-wrap: wrap;
     margin: 6em 10em;
@@ -157,27 +168,12 @@ button.border {
     font-size: 18px;
 }
 
-@media screen and (max-width: 1000px) {
-    .quote-block {
-        padding: 2em 0;
-    }
-
-    .blue-block {
-        margin: 1em 2em;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .action-text-bigger {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
     .hero-right>img {
         width: 300px;
         height: 200px;
         padding-top: 0;
+        margin-left: .25em;
     }
 
     .hero,
@@ -195,4 +191,19 @@ button.border {
         text-align: center;
         padding-bottom: 1em;
     }
+
+    .quote-block {
+        padding: 2em 0;
+    }
+
+    .action-block {
+        margin: 1em 2em;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .action-text-bigger {
+        margin: 0;
+    }
+
 }

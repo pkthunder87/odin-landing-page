@@ -11,14 +11,14 @@
 
 <body>
   <div class="hero">
-    <div class="header">
+    <div class="header" id="header">
       <div class="logo-block">
         Header Logo
       </div>
       <ul class="links">
-        <li><a href=index.html>header link one</a></li>
-        <li><a href=index.html>header link two</a></li>
-        <li><a href=index.html>header link three</a></li>
+        <li><a href='#info'>some random info</a></li>
+        <li><a href="#quote">motivational quote</a></li>
+        <li><a href="#action">sign up</a></li>
       </ul>
     </div>
     <div class="hero-block">
@@ -28,14 +28,14 @@
         under the main title. It's a smaller font and the color is lower
         contrast
         </p>
-        <button>Sign up</button>
+        <button><a href="#">Sign up</a></button>
       </div>
       <div class="hero-right">
         <img src="./images/snow.jpg" alt="snow blanketed pathway">
       </div>
     </div>
   </div>
-  <div class="title">Some random information.</div>
+  <div class="info" id="info">Some random information.</div>
   <div class="big-block">
     <div class="small-blocks">
       <img src="./images/pexels-brett-sayles.jpg" alt="snowy mountain">
@@ -45,7 +45,7 @@
     <div class="small-blocks">
       <img src="./images/pexels-grigoriy.jpg" alt="icy snowflake">
       <div class="text">Two delicate snowflakes gently tapping each
-      other.</div>
+        other.</div>
     </div>
 
     <div class="small-blocks">
@@ -60,24 +60,25 @@
       <div class="text">A cozy seaside village covered in snow.</div>
     </div>
   </div>
-  <div class="quote-block">
+  <div class="quote-block" id="quote">
     <p class="quote"><i>Consult not your fears but your hopes and your
-    dreams. Think not about your frustrations, but about your
-    unfulfilled potential. Concern yourself not with what you tried and
-    failed in, but with what it is still possible for you to do.</i>
+        dreams. Think not about your frustrations, but about your
+        unfulfilled potential. Concern yourself not with what you tried and
+        failed in, but with what it is still possible for you to do.</i>
     </p>
     <h3 class="author">- Pope John XXIII</h3>
   </div>
-  <div class="blue-block">
-    <div class="blue-left">
+  <div class="action-block" id="action">
+    <div class="action-left">
       <p class="action-text-bigger">Call to action! It's time!</p>
       <p class="action-text-smaller">Sign up for our product by clicking
-      that button right over there!</p>
+        that button right over there!</p>
     </div>
-    <div class="blue-right">
-      <button class="border">Sign up</button>
+    <div class="action-right">
+      <button class="border"><a href="#">Sign up</a></button>
     </div>
   </div>
+  <button class="top"><a href="#">⬆</a></button>
 </body>
 
 </html>
