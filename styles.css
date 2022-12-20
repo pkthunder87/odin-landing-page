@@ -142,6 +142,7 @@ span.top {
 .author {
     text-align: right;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .quote-block {
