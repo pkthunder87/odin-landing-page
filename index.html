@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
-  <div class="hero">
-    <div class="header" id="header">
-      <div class="logo-block">
-        Header Logo
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Landing Page</title>
+  </head>
+
+  <body>
+    <div class="hero">
+      <div class="header" id="header">
+        <div class="logo-block">Header Logo</div>
+        <ul class="links">
+          <li><a href="#info">some random info</a></li>
+          <li><a href="#quote">motivational quote</a></li>
+          <li><a href="#action">sign up</a></li>
+        </ul>
       </div>
-      <ul class="links">
-        <li><a href='#info'>some random info</a></li>
-        <li><a href="#quote">motivational quote</a></li>
-        <li><a href="#action">sign up</a></li>
-      </ul>
+      <div class="hero-block">
+        <div class="hero-left">
+          <h1>This website is awesome</h1>
+          <p class="sub-text">
+            This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast
+          </p>
+          <a href="#"><span>Sign up</span></a>
+        </div>
+        <div class="hero-right">
+          <img
+            src="./images/pixabay-snow-nickype.jpg"
+            alt="snow blanketed pathway"
+          />
+        </div>
+      </div>
     </div>
-    <div class="hero-block">
-      <div class="hero-left">
-        <h1>This website is awesome</h1>
-        <p class="sub-text">This website has some subtext that goes here
-        under the main title. It's a smaller font and the color is lower
-        contrast
+    <div class="info" id="info">Some random information.</div>
+    <div class="big-block">
+      <div class="small-blocks">
+        <img src="./images/pexels-brett-sayles.jpg" alt="snowy mountain" />
+        <div class="text">A snowy mountain surrounded by pine trees.</div>
+      </div>
+
+      <div class="small-blocks">
+        <img src="./images/pexels-grigoriy.jpg" alt="icy snowflake" />
+        <div class="text">
+          Two delicate snowflakes gently tapping each other.
+        </div>
+      </div>
+
+      <div class="small-blocks">
+        <img
+          src="./images/pexels-karen-boshoff.jpg"
+          alt="metal
+      snowflake"
+        />
+        <div class="text">A metallic snowflake on a pink background.</div>
+      </div>
+
+      <div class="small-blocks">
+        <img
+          src="./images/pexels-rhiannon-stone.jpg"
+          alt="snowy seaside
+      village"
+        />
+        <div class="text">A cozy seaside village covered in snow.</div>
+      </div>
+    </div>
+    <div class="quote-block" id="quote">
+      <p class="quote">
+        <i
+          >Consult not your fears but your hopes and your dreams. Think not
+          about your frustrations, but about your unfulfilled potential. Concern
+          yourself not with what you tried and failed in, but with what it is
+          still possible for you to do.</i
+        >
+      </p>
+      <p class="author">- Pope John XXIII</p>
+    </div>
+    <div class="action-block" id="action">
+      <div class="action-left">
+        <p class="action-text-bigger">Call to action! It's time!</p>
+        <p class="action-text-smaller">
+          Sign up for our product by clicking that span right over there!
         </p>
-        <a href="#"><span>Sign up</span></a>
       </div>
-      <div class="hero-right">
-        <img src="./images/pixabay-snow-nickype.jpg" alt="snow blanketed pathway">
+      <div class="action-right">
+        <a href="#"><span class="border">Sign up</span></a>
       </div>
     </div>
-  </div>
-  <div class="info" id="info">Some random information.</div>
-  <div class="big-block">
-    <div class="small-blocks">
-      <img src="./images/pexels-brett-sayles.jpg" alt="snowy mountain">
-      <div class="text">A snowy mountain surrounded by pine trees.</div>
-    </div>
-
-    <div class="small-blocks">
-      <img src="./images/pexels-grigoriy.jpg" alt="icy snowflake">
-      <div class="text">Two delicate snowflakes gently tapping each
-        other.</div>
-    </div>
-
-    <div class="small-blocks">
-      <img src="./images/pexels-karen-boshoff.jpg" alt="metal
-      snowflake">
-      <div class="text">A metallic snowflake on a pink background.</div>
-    </div>
-
-    <div class="small-blocks">
-      <img src="./images/pexels-rhiannon-stone.jpg" alt="snowy seaside
-      village">
-      <div class="text">A cozy seaside village covered in snow.</div>
-    </div>
-  </div>
-  <div class="quote-block" id="quote">
-    <p class="quote"><i>Consult not your fears but your hopes and your
-        dreams. Think not about your frustrations, but about your
-        unfulfilled potential. Concern yourself not with what you tried and
-        failed in, but with what it is still possible for you to do.</i>
-    </p>
-    <p class="author">- Pope John XXIII</p>
-  </div>
-  <div class="action-block" id="action">
-    <div class="action-left">
-      <p class="action-text-bigger">Call to action! It's time!</p>
-      <p class="action-text-smaller">Sign up for our product by clicking
-        that span right over there!</p>
-    </div>
-    <div class="action-right">
-      <a href="#"><span class="border">Sign up</span></a>
-    </div>
-  </div>
-  <a href="#"><span class="top">⬆</span></a>
-  <footer class="footer">Copyright © The Odin Project 2021</footer>
-</body>
-
+    <a href="#"><span class="top">⬆</span></a>
+    <footer class="footer">Copyright © The Odin Project 2021</footer>
+  </body>
 </html>
